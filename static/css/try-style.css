@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  background-color: #6f92dc;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  width: 29.99999%;
+}
+
+.logo-img {
+  display: block;
+  width: 30%;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px auto;
+}
+
+.logo-vision {
+  color: antiquewhite;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.title {
+  width: 29.99999%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px;
+}
+
+.title h2 {
+  text-align: center;
+  color: antiquewhite;
+  margin: 5px;
+  padding: 3px;
+}
+
+.title h2:hover {
+  color: green;
+}
+
+.back-logo {
+  display: flex;
+  justify-content: center;
+  width: 29.99999%;
+  margin: auto;
+  align-items: center;
+}
+
+.back-logo a img {
+  width: 40px;
+  height: 30px;
+}
+
+.service-name {
+  display: flex;
+  width: 50%;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-name .service-text {
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+  color: rgb(85, 85, 214);
+}
+
+footer .contact {
+  width: 40%;
+  margin: 20px auto;
+  border: 2px solid rgb(85, 85, 214);
+  border-radius: 10px;
+}
+
+footer .contact h2 {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+footer .contact .email,
+footer .contact .phone {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 25px;
+  justify-content: left;
+}
+
+footer .contact .email img,
+footer .contact .phone img {
+  width: 10%;
+  height: 40px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+footer .contact .email .footer-decorate,
+footer .contact .phone .footer-decorate {
+  text-align: center;
+  padding: 8px;
+}
+
+footer .authorization {
+  background-color: black;
+  color: antiquewhite;
+}
+
+footer .authorization h5 {
+  text-align: center;
+  padding: 5px;
+}
+
+.main-code {
+  width: 80%;
+  margin: auto;
+  border: 2px solid silver;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-code h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
+  color: rgb(85, 85, 214);
+  font-size: 24px;
+}
+
+.main-code form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-code form textarea {
+  width: 60%;
+  height: 150px;
+  margin: 9px;
+  padding: 3px;
+}
+
+.main-code form input {
+  margin: 5px;
+  padding: 3px;
+  font-size: 16px;
+  width: 25%;
+  height: 50px;
+  background-color: green;
+  border-radius: 5px;
+  color: antiquewhite;
+}
+
+.main-code h4 {
+  text-align: center;
+  color: rgb(85, 85, 214);
+  margin: 5px;
+  padding: 3px;
+  font-size: 24px;
+}
+
+.main-code .results-names,
+.main-code .results-values {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 8px;
+  padding: 4px;
+}
+
+.main-code .results-names .tag-key,
+.main-code .results-names .confidence-key {
+  margin: 5px;
+  padding: 3px;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  footer .contact {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer .contact {
+    width: 80%;
+  }
+
+  footer .contact .email img,
+  footer .contact .phone img {
+    width: 40px;
+    height: 40px;
+  }
+}

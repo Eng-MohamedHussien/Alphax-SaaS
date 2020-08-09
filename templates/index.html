@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="A software Startup in Egypt provides alot of solutions in Ecommerce field and ready to be used"
+    />
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>AlphaX | Software Services & Solutions</title>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="AlphaX" class="logo-img">
+        <h5 class="logo-vision">Software Solutions Company</h5>
+      </div>
+      <a href="#" class="hamburger">
+        <span class="layer"></span>
+        <span class="layer"></span>
+        <span class="layer"></span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link" id="p1">Home</a></li>
+          <li><a href="#services-id" class="nav-link" id="p2">Benefits</a></li>
+          <li><a href="#pricing-id" class="nav-link" id="p3">Services</a></li>
+          <li><a href="#contact-id" class="nav-link" id="p4">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="vision">
+          <h2 class="question-x">Our vision</h2>
+          <h2 class="decorate">AlphaX provides Solutions to eCommerce Platforms by using ML models</h2>
+          <h2 class="decorate">AlphaX customizes it's Solutions according to Customer's need</h2>
+          <h2 class="decorate">AlphaX provides Consultation to the Customers to help them to increase their revenue</h2>
+          <h2 class="decorate">AlphaX provides Solutions based on Deep learning areas: Computer Vision and NLP</h2>
+          <h2 class="decorate">AlphaX's Solutions can be one of this forms: Web apps, Mobile apps and Restful Apis</h2>
+      </section>
+      <h2 class='question'  id="services-id">How AlphaX can help your business?</h2>
+      <section class="core">
+        <div class="sub-section">
+            <img src="{{ url_for('static', filename='img/customer-time.png') }}" alt="save time">
+            <p>Save customer time and Provide fast Service, by using the magic of deep learning techniques.</p>
+        </div>
+        <div class="sub-section">
+          <img src="{{ url_for('static', filename='img/quick-search.jpg') }}" alt="quick search">
+          <p>Enable the customer to reach his purchase quickly using images and key word to search.</p>
+        </div>
+        <div class="sub-section">
+            <img src="{{ url_for('static', filename='img/increase-revenue.png') }}" alt="increase revenue">
+            <p>Increase revenue, which you got from your eCommerce platform by getting more customers.</p>
+        </div>
+        <div class="sub-section">
+            <img src="{{ url_for('static', filename='img/automation.png') }}" alt="automation">
+            <p>Decreasing human interaction will increase productivity and decrease faults and funds.</p>
+        </div>
+      </section>
+      <section class="services" id="pricing-id">
+        <h2 class="service-name">Customer Review Sentiment Analysis</h2>
+        <div class="services-containers">
+          <div class="service-container">
+            <div class="upper">
+              <h2 class="service-overview"><span style="color:  antiquewhite;">English Model</span></h2>
+              <h2 class="service-price">7&#36; <span style="color: black;">per month</span></h2>
+            </div>
+            <div class="lower">
+              <p class="feature">Api hosted on a server</p>
+              <p class="feature">Use an authorized api</p>
+              <p class="feature">No limited number of Review records during the month</p>
+              <p class="feature">Email support during the month</p>
+              <p class="feature">Returned Json contains tag and confidence</p>
+              <p class="feature">Tag values: Positive and Negative</p>
+              <p class="feature">Our Api can be integrated with any Web app and Mobile app</p>
+              <p class="feature">Filter algorithm to remove duplicates with extra fees</p>
+            </div>
+          </div>
+          <!--
+          <div class="service-container">
+            <div class="upper">
+              <h2 class="service-overview"><span style="color:  antiquewhite;">Arabic Model</span></h2>
+              <h2 class="service-price">20&#36; <span style="color: black;">per month</span></h2>
+            </div>
+            <div class="lower">
+              <p class="feature">Api hosted on a server</p>
+              <p class="feature">Use an authorized api</p>
+              <p class="feature">No limited number of Review records during the month</p>
+              <p class="feature">Email support during the month</p>
+              <p class="feature">Returned Json contains tag and confidence</p>
+              <p class="feature">Tag values: Positive and Negative</p>
+              <p class="feature">Our Api can be integrated with any Web app and Mobile app</p>
+              <p class="feature">Filter algorithm to remove duplicates with extra fees</p>
+            </div>
+          </div>
+          <div class="service-container">
+            <div class="upper">
+              <h2 class="service-overview"><span style="color:  antiquewhite;">En&Ar Models</span></h2>
+              <div class="offer">
+                <h2 class="service-price">30&#36; <span style="color: black;">per month</span></h2>
+              </div>
+            </div>
+            <div class="lower">
+              <p class="feature">Api hosted on a server</p>
+              <p class="feature">Use an authorized api</p>
+              <p class="feature">No limited number of Review records during the month</p>
+              <p class="feature">Email support during the month</p>
+              <p class="feature">Returned Json contains tag and confidence</p>
+              <p class="feature">Tag values: Positive and Negative</p>
+              <p class="feature">Our Api can be integrated with any Web app and Mobile app</p>
+              <p class="feature">Filter algorithm to remove duplicates with extra fees</p>
+            </div>
+          </div>
+          -->  
+        </div>
+      </section>
+      <div class="trial">
+        <button name="try" type="button" class="service-trial"
+                onclick="location.href='{{ url_for('sentiment_analysis') }}'">Try for free</button>
+      </div>
+    </main>
+    <footer id="contact-id">
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="email">
+          <img src="{{ url_for('static', filename='img/email.png') }}" alt="email logo">
+          <h5 class="footer-decorate">eng.mohamedhussien1996@gmail.com</h5>
+        </div>
+        <div class="phone">
+          <img src="{{ url_for('static', filename='img/mobile.jpg') }}" alt="phone logo">
+          <h5 class="footer-decorate">+201284252638</h5>
+        </div>
+      </section>
+      <section class="authorization">
+          <h5>Copyright &copy; 2020 AlphaX.</h5>
+          <h5>All rights reserved.</h5>
+      </section>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }} "></script>
+  </body>
+</html>

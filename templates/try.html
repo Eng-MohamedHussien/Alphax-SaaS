@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="A software Startup in Egypt provides alot of solutions in Ecommerce field and ready to be used"
+    />
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/try-style.css') }}">
+    <title>Sentiment Analyzer Service</title>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="AlphaX" class="logo-img">
+        <h5 class="logo-vision">Software Solutions Company</h5>
+      </div>
+      <div class="title">
+          <h2>Alphax Services</h2>
+      </div>
+      <div class="back-logo">
+          <a href="{{ url_for('home') }}">
+              <img src="{{ url_for('static', filename='img/back-logo.png') }}" alt="back-logo">
+          </a>
+      </div>
+    </header>
+    <main>
+        <section>
+            <div class="service-name">
+                <h2 class="service-text">Sentiment Analyzer</h2>
+            </div>
+        </section>
+        <section class="main-code">
+            <h3>Test With Your Own Customer Review Text</h3>
+            <h3>Supporting Arabic and English Languages</h3>
+            <form action="sentiment_analysis_try" method="post">
+              <textarea name="review" id="review"></textarea>
+              <input type="submit" value="Classify">
+            </form>
+            <h4>Results</h4>
+            <div class="results-names">
+              <label class="tag-key">TAG</label> 
+              <label class="confidence-key">Confidence</label>
+            </div>
+            <div class="results-values">
+              <label id="tag-value">{{ tag }}</label>
+              <label id="confidence-value">{{ confidence }}</label>
+            </div> 
+        </section>
+    </main>
+    <footer id="contact-id">
+        <section class="contact">
+          <h2>Contact Us</h2>
+          <div class="email">
+            <img src="{{ url_for('static', filename='img/email.png') }}" alt="email logo">
+            <h5 class="footer-decorate">eng.mohamedhussien1996@gmail.com</h5>
+          </div>
+          <div class="phone">
+            <img src="{{ url_for('static', filename='img/mobile.jpg') }}" alt="phone logo">
+            <h5 class="footer-decorate">+201284252638</h5>
+          </div>
+        </section>
+        <section class="authorization">
+            <h5>Copyright &copy; 2020 AlphaX.</h5>
+            <h5>All rights reserved.</h5>
+        </section>
+      </footer>
+    </body>
+  </html>
