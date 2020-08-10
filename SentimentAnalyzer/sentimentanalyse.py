@@ -2,7 +2,6 @@ import json
 import re
 import string
 from nltk.corpus import stopwords
-from tensorflow.keras.preprocessing.text import tokenizer_from_json
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Embedding, Flatten, Conv1D, MaxPooling1D
@@ -38,7 +37,7 @@ def predict_sentiment(review, nlp_tokenizer, model):
     y = model.predict(x, verbose=0)
     percent_pos = y.tolist()[0][0]
     if round(percent_pos) == 0:
-        return (1-percent_pos), 'NEGATIVE'
+        return (1-percent_pos)*100, 'NEGATIVE'
     return percent_pos*100, 'POSITIVE'
 
 

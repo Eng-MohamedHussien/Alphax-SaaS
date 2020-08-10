@@ -43,14 +43,24 @@
               <input type="submit" value="Classify">
             </form>
             <h4>Results</h4>
-            <div class="results-names">
-              <label class="tag-key">TAG</label> 
-              <label class="confidence-key">Confidence</label>
+            <div class="row">
+                <div class="col">
+                    <div class="item">
+                        <label class="text-label">TAG</label>
+                    </div>
+                    <div class="item">
+                        <label class="value-label" {% if tag=='POSITIVE' %} style="color: green" {% else %} style="color: red" {% endif %}>{{ tag }}</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <label class="text-label">Confidence</label>
+                    </div>
+                    <div class="item">
+                        <label class="value-label">{{ confidence }}</label>
+                    </div>
+                </div>
             </div>
-            <div class="results-values">
-              <label id="tag-value">{{ tag }}</label>
-              <label id="confidence-value">{{ confidence }}</label>
-            </div> 
         </section>
     </main>
     <footer id="contact-id">

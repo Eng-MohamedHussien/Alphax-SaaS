@@ -180,22 +180,42 @@ footer .authorization h5 {
   font-size: 24px;
 }
 
-.main-code .results-names,
-.main-code .results-values {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 8px;
-  padding: 4px;
+.main-code .row {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 3px;
 }
 
-.main-code .results-names .tag-key,
-.main-code .results-names .confidence-key {
-  margin: 5px;
-  padding: 3px;
-  font-size: 24px;
-  text-align: center;
+.main-code .row .col {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 3px;
+    width: 40%;
+    align-items: center;
 }
+
+.row .col .item{
+    align-items: center;
+    margin: 5px;
+    padding: 3px;
+}
+
+.col .item .text-label {
+    margin: 5px;
+    padding: 3px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.col .item .value-label {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(85, 85, 214);
+    padding: 5px; margin: 3px;
+}
+
 
 @media only screen and (max-width: 900px) {
   footer .contact {
@@ -214,3 +234,6 @@ footer .authorization h5 {
     height: 40px;
   }
 }
+
+
+

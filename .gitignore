@@ -3,3 +3,4 @@
 SentimentAnalyzer/.idea
 SentimentAnalyzer/eng_sentimentAnalyzer.h5
 SentimentAnalyzer/tokenizer.json
+SentimentAnalyzer/__pycache__

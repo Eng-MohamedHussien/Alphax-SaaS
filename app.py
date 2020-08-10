@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from SentimentAnalyzer.sentimentanalyse import *
+from tensorflow.keras.preprocessing.text import tokenizer_from_json
 app = Flask(__name__)
 # to load tokenizer
 with open('./SentimentAnalyzer/tokenizer.json') as f:
@@ -27,9 +28,9 @@ def sentiment_analysis_try():
 	if request.method == 'POST':
 		review = request.form['review']
 		confidence, tag = predict_sentiment(review, tokenizer, nlp_model)
-		return render_template('try.html', tag=tag, confidence=confidence)
+		return render_template('try.html', tag=tag, confidence=str(round(confidence, 2))+'%')
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(host='0.0.0.0')
 
