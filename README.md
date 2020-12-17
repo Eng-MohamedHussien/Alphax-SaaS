@@ -9,7 +9,6 @@ _Provide Solutions for **Ecommerce Platforms** to increase revenue ,productivity
 * Visual Search Engine.
 * Automatic Product Categorization.
 * Automatic Generation for Product Description.
-* Regular Search Engine.
 * Chatbot.
 * Voice Recognition.
 * Product Recommendation.
